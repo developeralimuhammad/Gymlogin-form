@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Montserrat:wght@500&display=swap');
+    </style>
+    <title></title>
+
+    <style>
+        /* CSS RESET */
+        body {
+            color: white;
+            margin: 0;
+            padding: 0;
+            background: url(/bc.jpg);
+            font-family: 'Montserrat', sans-serif;
+
+        }
+
+
+
+        .left {
+
+            display: inline-block;
+            position: absolute;
+            top: 22px;
+            left: 20px;
+            font-family: 'Montserrat', sans-serif;
+            z-index: -10
+        }
+
+        .right {
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            top: 47px;
+            right: 20px;
+
+        }
+
+        .mid {
+            /* border: 2px solid green; */
+            display: block;
+            text-align: center;
+            justify-content: center;
+            width: 100%;
+            margin-top: 30px;
+        }
+
+        .navbar {
+            display: inline-block;
+
+        }
+
+        .navbar li {
+            display: inline-block;
+            margin: 15px;
+
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.5rem;
+            margin: 10px 10px;
+
+        }
+
+
+        .navbar ul li a:hover {
+            cursor: pointer;
+            color: crimson;
+
+
+        }
+
+        .left img {
+            width: 6vw;
+            padding: 10px 70px;
+        }
+
+        .left {
+            overflow: hidden;
+        }
+
+        .btn {
+            margin: 8px 20px;
+            color: white;
+            background-color: black;
+            border-radius: 9px;
+            border: 2px solid grey;
+            font-family: 'Montserrat', sans-serif;
+            padding: 9px;
+            font-size: medium;
+
+
+        }
+
+        .btn:hover {
+            color: white;
+        }
+
+
+        .container {
+            margin: 30px;
+            margin-right: 10%;
+            padding: 10px 37px;
+            border: 2px solid white;
+            border-radius: 54px;
+            display: inline-block;
+            width: 31vw;
+            float: right;
+        }
+
+
+        .form-group input {
+            text-align: center;
+            width: 300px;
+            border-radius: 40px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: medium;
+            padding: 5px;
+            margin: 5px;
+        }
+
+
+
+        .container input {
+            text-align: center;
+            border: 10px solid black;
+            padding: 11px;
+            /* font-size: 26px; */
+        }
+
+        .container h1 {
+            text-align: center;
+            /* display: block; */
+            margin: 10px auto;
+        }
+
+        .container button {
+            display: block;
+            width: 23%;
+            margin: auto;
+            color: white;
+            height: 7vh;
+            border-radius: 30px;
+        }
+
+        .form-group {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 1.7rem;
+        }
+
+        .left img {
+            border-radius: 50%;
+            /* border: 2px solid red; */
+        }
+
+        button:hover {
+            background: crimson;
+        }
+
+        .new-left {
+            margin: auto;
+            /* border: 2px solid red; */
+            width: 64%;
+            margin-top: 20%;
+            margin-left: 13px;
+
+        }
+
+        .left div {
+            line-height: 22px;
+            margin-left: 70px;
+            font-size: medium;
+            font-family: sans-serif;
+
+        }
+
+
+        .first span {
+            color: crimson;
+
+
+        }
+
+        h1 span {
+            color: crimson;
+            line-height: 30px;
+
+        }
+
+        .new-left h1 {
+            line-height: 32px;
+        }
+
+        /* .line{
+            border: 2px solid red;
+        } */
+    </style>
+</head>
+
+<body>
+    <header class="header">
+
+
+        <div class="left">
+            <img src="/logo.png">
+            <div class="first"> Alens's</div>
+            <div class="first"> <span>FITNESS</span></div>
+            <div class="first"> CLUB</div>
+
+
+
+            <div class="new-left">
+                <h1 class="line">‘What hurts today <span>makes you stronger</span> tomorrow.’</h1>
+            </div>
+
+        </div>
+
+        <!-- for navbar -->
+
+        <div class="mid">
+            <div class="navbar">
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#email">Email</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- right for button -->
+
+        <div class="right">
+            <button class="btn">Contact Us</button>
+            <button class="btn">Email Us</button>
+        </div>
+
+    </header>
+    <div class="container">
+        <h1>Join the best gym of new york!</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Full Address">
+            </div>
+            <button class="btn">Submit</button>
+
+        </form>
+
+
+
+
+    </div>
+
+</body>
+
+</html>
